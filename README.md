@@ -1,6 +1,6 @@
 # Resposnsive-Resume-Maker
 If you don't want to share your picture in the resume then remove <img src="pic.jpg" from HTML code otherwise 
-First you have to change pic.jpg with your own picture. Make sure your picture's name is pic.jpg otherwise you have to change "pic.jpg" in the HTML code with your picture file name. 
+First you have to change pic.jpg with your own picture. Make sure your picture's filename is pic.jpg otherwise you have to change "pic.jpg" in the HTML code with your picture file name. 
 I suggest you to edit HTML code (indexResume.html) to add your ABOUT, EDUCATION, SKILLS, PROFILE, CERTIFICATIONS etc.
 You can change heading (h2) if you want to chnage but I recommend you don't change it but change its inputs which are given by me.
 You can also add some headings and desirable inputs, you want to show in your RESUME.
