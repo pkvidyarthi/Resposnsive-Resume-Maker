@@ -14,13 +14,22 @@ I hope you will design an awesome responsive RESUME.
 If you want to save made resume as a pdf file then I want to say it's very hard to do that without any backend programm (as like php), 
 if you want to do then should have a good understanding of php or any backend language.
 
-BUT I want to say that you can save it as a pdf file but it'll not perfect as like original (which is made by using of php) it'll be readable and usable. You can upload it anywhere you want to uplpad (to apply for internship or job ).
+BUT I want to say that you can save it as a pdf file but it'll not perfect as like original (which is made by using of php) it'll be readable and usable. You can upload it anywhere you want to upload (to apply for internship or job ).
+  
+1st Method:
+
+You have to visit website https://www.sejda.com/html-to-pdf
+and convert your HTML code to pdf [ Note: CSS code must have in same HTML file otherwise design will be missing from your pdf file].
+  
+2nd Method :
 
 Step 1: Choose option Print or use Ctrl + P.
 Step 2: Set destination "save as PDF (This option can vary with your system but you have to choose that option in which "pdf" option is included)".
 Step 3: Go to the option "more settings".
 Step 4: Set margin: minimum.
-Step 5: Set paper size A1 or that option in which resume fit in a single page.
+Step 5: Set paper size A1 or that option in which resume fit in a single page [ You can also choose A4 size and choose scale custom at 47 ].
 (It's not necessary but it is a best option.)
 Step 6: Tick (enable) option Background Graphics.
 Step 7: Save.
+
+                                                                       
