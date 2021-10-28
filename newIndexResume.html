@@ -9,7 +9,8 @@ So I recommend you to use this file to create / design your resume.
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <link rel="shortcut icon" href="https://pbs.twimg.com/media/FCzbSr7WEAgPslA?format=jpg&name=medium" type="image/x-icon">
+    <title>Resume Prince Kumar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,21 +29,25 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh; 
+    font-size: small;
+    padding: 0;
+    margin: 0;
 }
 #title{
     color: yellow;
 }
 .container{
     position: relative;
-    width: 100%;
+    
     min-height: 1000px;
-    max-width: 1000px;
+    max-width:1000px;
     margin: 50px;
     background: #fff;
     display: grid;
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0, 0,0,0.1);
+
 }
 .container .leftside{
     position: relative;
@@ -113,9 +118,8 @@ body{
 .contactinfo ul li .text{
     color: #fff;
     font-weight: 300;
-    /* font-size: small; */
 }
-/* .contactinfo ul li */  #email{
+#email{
     font-size: small;
 }
 .contactinfo.educationinfo li{
@@ -137,24 +141,10 @@ body{
 }
 
 .contactinfo ul li span{
-    color:rgb(253, 253, 104);
+    color:#ff0;
     font-weight: 200;
 }
-/* .contactinfo.languageinfo .percent {
-position: relative;
-width: 100%;
-height: 6px;
-background-color: #081921;
-display: block;
-margin-top: 5px;
-} */
-/* .contactinfo.languageinfo .percent div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background:yellow;
-} */
+
 .contactinfo.languageinfo .text{
     font-weight: 500;
 }
@@ -185,9 +175,6 @@ margin-top: 5px;
 
 .about .para{
     color: #333;
-    /* border: 4px solid #003147;
-    border-radius: 23px; */
-    /* padding: 8px; */
     
 }
 .para span{
@@ -238,50 +225,55 @@ align-items: center;
     filter: drop-shadow(0 2px 0px #000) ;
 
 }
-/* .skills .box .percent{
-position: relative;
+.coursework .box{
+position:relative;
 width: 100%;
-height: 8px;
-background-color: #f0f0f0;
+
+display:contents;
 }
-.skills .box .percent div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #03a9f4;
-} */
-.interest ul li i{
+.coursework .box button{
+    position: relative;
+    color: #333;
+    font-weight: 500;
+    border: 0px solid #03a9f4;
+    padding:6px;
+    margin: 7px;
+    border-radius: 0px;
+    /* background-color:rgba(5, 5, 5, 0.1); */
+    filter: drop-shadow(0 4px 3px #000) ;
+
+}
+.contactinfo .interest ul li i{
     
     filter: drop-shadow(0 3px 0px #003147) ;
 }
 
-.interest ul{
+.contactinfo .interest ul{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     
 
 }
-.interest ul li{
+.contactinfo .interest ul li{
     list-style: none;
-    color: #333;
+    color: #f0f0f0;
     font-weight: 500;
     margin: 10px 0;
 
 }
 .interest ul li .fa{
-    color: #03a9f4;
+    color: #ff0;
     font-size: 18px;
     width: 20px;
     margin-right: 10px;
 }
 
 #list2{
-    
     color: #333;
     font-weight: 500;
     margin: 10px 20px;
 }
+
 
 .project h4{
     color: #848c99;
@@ -306,10 +298,10 @@ background-color: #f0f0f0;
         grid-template-columns: repeat(1,1fr);
 
     }
-    .interest ul{
+    
+    .title2{
         grid-template-columns: repeat(2,1fr);
     }
-    
     
 
 }
@@ -321,9 +313,9 @@ background-color: #f0f0f0;
     .about .box .yearcompany{
         margin-bottom: 5px;
     }
-    /* .skills .box button{
-       grid-template-columns: repeat(4,1fr);
-    } */
+    .title2{
+        grid-template-columns: repeat(2,1fr);
+    }
 
 }
 
@@ -331,9 +323,10 @@ background-color: #f0f0f0;
 </head>
 
 <body>
+    <div id="print"> 
 
     <div class="container">
-        
+         
         <div class="leftside">
             <div class="profiletxt">
                 <div class="imgbox">
@@ -342,7 +335,7 @@ background-color: #f0f0f0;
                 <h2>Prince Kumar <br><span id="title">Studious & Quick Learner</span></h2>
             </div>
             <div class="contactinfo">
-                <h3 class="title">Contact Information</h3>
+                <h4 class="title">Contact Information</h4>
                 <ul>
                     <li class="list">
                         <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
@@ -385,35 +378,35 @@ background-color: #f0f0f0;
                 </ul>
             </div>
             <div class="contactinfo educationinfo">
-                <h3 class="title">Education</h3>
+                <h4 class="title">Education</h4>
                 <ul>
                     <li>
                         <h5>2018 - 2022</h5>
-                        <h4>Mahavir Swami Institute Of Technology</h4>
-                        <h4>Bachelor's <span> Computer Science & Engineering</span></h4>
-                        <h4>7.8 CGPA</h4>
-                        <h4>Guru Gobind Singh Indraprastha University</h4>
+                        <h5>Mahavir Swami Institute Of Technology</h5>
+                        <h5>Bachelor's <span> Computer Science & Engineering</span></h5>
+                        <h5>7.8 CGPA</h5>
+                        <h5>Guru Gobind Singh Indraprastha University</h5>
                     </li>
                     <li>
                         <h5>2014 - 2016</h5>
-                        <h4>B.D Evening College Patna</h4>
-                        <h4>Intermediate <span> Science</span></h4>
-                        <h4>65.6 %</h4>
-                        <h4>Bihar School Examination Board</h4>
+                        <h5>B.D Evening College Patna</h5>
+                        <h5>Intermediate <span> Science</span></h5>
+                        <h5>65.6 %</h4>
+                        <h5>Bihar School Examination Board</h5>
                     </li>
                     <li>
                         <h5>2013 - 2014</h5>
-                        <h4>Adarsh High School Kadwa</h4>
-                        <h4>Matriculation</h4>
-                        <h4>76.4 %</h4>
-                        <h4>Bihar School Examination Board</h4>
+                        <h5>Adarsh High School Kadwa</h5>
+                        <h5>Matriculation</h5>
+                        <h5>76.4 %</h5>
+                        <h5>Bihar School Examination Board</h5>
                     </li>
                 </ul>
 
 
             </div>
             <div class="contactinfo languageinfo">
-                <h3 class="title">Languages</h3>
+                <h4 class="title">Languages</h4>
                 <ul>
                     <li>
                         <span class="text">Hindi</span>
@@ -439,28 +432,52 @@ background-color: #f0f0f0;
                     </li> -->
                 </ul>
             </div>
+            <div class="contactinfo interest">
+                <h3 class="title">Interest</h3>
+                <ul>
+                    <li><i class="fa fa-book" aria-hidden="true"></i>Learning New Skills</li>
+                    <li><i class="fa fa-laptop" aria-hidden="true"></i>Experimenting With Code</li>
+                    <li><i class="fa fa-microphone" aria-hidden="true"></i>Singing</li>
+                    <li><i class="fa fa-pencil" aria-hidden="true"></i>Writing</li>
+                </ul>
+            </div>
         </div>
         <div class="rightside">
             <div class="about">
-                <h2 class="title2">About Me</h2>
+                <h3 class="title2">About Me</h3>
                 <p class="para">I am <span>conscientious, studious</span> and <span>quick learner</span>. I am doing my bachelor's in the field of <span>Computer Science & Engineering</span> from <span>Guru Gobind Singh Indraprastha University</span> and I have a good understanding of <span>Java, JavaScript, Node JS, HTML, CSS, SQL</span> and <span>Python</span>. <br>
-                    I'm passionate about my work. Because I love what I do and I'm always looking for an opportunity to do better and achieve greatness.</p>
+                    I'm passionate about my work. Because I love what I do and I'm always looking for an opportunity to do better and achieve greatness and I like to work for an organization which provides me the opportunity to improve my skills and knowledge to growth along with the organization objective.
+</p>
             </div>
             
-            <div class="about">
+            <div class="about coursework">
                 
-                <h2 class="title2">Coursework</h2>
-                <ul>
-                    <li id="list2">Data Structure</li>
-                    <li id="list2">Algorithm Design and Analysis</li>
-                    <li id="list2">Object Oriented Programming</li>
-                    <li id="list2">Database Management System</li>
-                    <li id="list2">Computer Network</li>
-                    <li id="list2">Operating System</li>
-                </ul>
+                <h3 class="title2">Coursework</h3>
+                <!-- <ul>
+                    <li id="list1">Algorithm Design and Analysis</li>
+                    <li id="list1">Object Oriented Programming</li>
+                    <li id="list1">Database Management System</li>
+                    <li id="list1">Data Structure</li>
+                    <li id="list1">Operating System</li>
+                </ul> -->
+                <div class="box">
+                    <button>Design and Analysis</button>
+                </div>
+                <div class="box">
+                    <button>Object Oriented Programming</button>
+                </div>
+                <div class="box">
+                    <button>Database Management System</button>
+                    </div>
+                <div class="box">
+                    <button>Data Structure</button>
+                </div>
+                <div class="box">
+                    <button>Operating System</button>
+                </div>
             </div>
             <div class="about">
-                <h2 class="title2">Experience</h2>
+                <h3 class="title2">Experience</h3>
                 <div class="box">
                     <div class="yearcompany">
                         <h5>2020 - 2021</h5>
@@ -488,7 +505,7 @@ background-color: #f0f0f0;
             </div>
 
             <div class="about skills">
-                <h2 class="title2">Professional Skills</h2>
+                <h3 class="title2">Professional Skills</h3>
 
                 <div class="box">
                     <button>Java</button>
@@ -532,7 +549,7 @@ background-color: #f0f0f0;
                     </div>
             </div>
             <div class="about certification">
-                <h2 class="title2">Certifications</h2>
+                <h3 class="title2">Certifications</h3>
                 <ul>
                     <!-- <a class="link"
                         href="https://drive.google.com/file/d/1Lw6IZShm9MA-cD20Rl_DGiF5ZoCNPxqJ/view?usp=sharing"
@@ -556,15 +573,15 @@ background-color: #f0f0f0;
 
            
             <div class="about project">
-                <h2 class="title2">Projects</h2>
+                <h3 class="title2">Projects</h3>
                 <ul>
-                <h4>Minor Project</h4>
-                <h3 id="proj">Resume Building <span id="link"><a class="link"
+                <h5>Minor Project</h5>
+                <h4 id="proj">Resume Design <span id="link"><a class="link"
                     href="https://github.com/pkvidyarthi/Resposnsive-Resume-Maker"
                     target="_blank">
                     <i class="fa fa-external-link" aria-hidden="true"></i>
                     
-                </a></span> </h3>
+                </a></span> </h4>
                     
                     <li id="list2">
                         <p>
@@ -579,17 +596,22 @@ background-color: #f0f0f0;
                     
 
         </div>
-        <div class="about interest">
-            <h2 class="title2">Interest</h2>
-            <ul>
-                <li><i class="fa fa-book" aria-hidden="true"></i>Learning New Skills</li>
-                <li><i class="fa fa-laptop" aria-hidden="true"></i>Experimenting With Code</li>
-                <li><i class="fa fa-microphone" aria-hidden="true"></i>Singing</li>
-                <li><i class="fa fa-pencil" aria-hidden="true"></i>Writing</li>
-            </ul>
-        </div>
+        
         
     </div>
+
+    <!-- <h5 onclick="Print('print')"></h5onclick>></h5>
+</div>
+<script type="text/javascript">
+    function Print(paravalue){
+        // var bcp =  document.body.innerHTML;
+        // var divcon = document.getElementById(paravalue).innerHTML;
+        // document.body.innerHTML = divcon;
+        // window.print();
+        // document.body.innerHTML = bcp;
+        window.print();
+    }
+</script> -->
 
 </body>
 
